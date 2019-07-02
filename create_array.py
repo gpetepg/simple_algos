@@ -3,7 +3,7 @@ import random
 def create_array(mx, sz, sort=False, is_set=False):
     if is_set:
         if sort:
-            return sorted(list(set([random.randint(1, mx) for x in range(0, sz)])))
+            return sorted(set([random.randint(1, mx) for x in range(0, sz)]))
         else:
             return list(set([random.randint(1, mx) for x in range(0, sz)]))
     else:
